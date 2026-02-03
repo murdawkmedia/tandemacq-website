@@ -47,7 +47,7 @@ const Layout = () => {
                     {/* Navigation Links - Left Side (Desktop) */}
                     <nav className="hidden md:flex items-center space-x-12 justify-self-start">
                         <Link to="/" className="text-sm font-bold uppercase tracking-widest hover:text-brand-gold transition-colors font-heading text-white">Home</Link>
-                        <a href="/#tandem-method" className="text-sm font-bold uppercase tracking-widest hover:text-brand-gold transition-colors font-heading text-white">Our Method</a>
+                        <a href={`${import.meta.env.BASE_URL}#tandem-method`} className="text-sm font-bold uppercase tracking-widest hover:text-brand-gold transition-colors font-heading text-white">Our Method</a>
                     </nav>
 
                     {/* Logo - Centered */}
@@ -71,7 +71,7 @@ const Layout = () => {
                 {/* Mobile Menu Overlay */}
                 <div className={`fixed inset-0 bg-brand-slate z-40 flex flex-col items-center justify-center space-y-8 transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
                     <Link to="/" onClick={() => setIsMenuOpen(false)} className="text-2xl font-bold uppercase tracking-widest font-heading text-white hover:text-brand-gold">Home</Link>
-                    <a href="/#tandem-method" onClick={() => setIsMenuOpen(false)} className="text-2xl font-bold uppercase tracking-widest font-heading text-white hover:text-brand-gold">Our Method</a>
+                    <a href={`${import.meta.env.BASE_URL}#tandem-method`} onClick={() => setIsMenuOpen(false)} className="text-2xl font-bold uppercase tracking-widest font-heading text-white hover:text-brand-gold">Our Method</a>
                     <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="text-2xl font-bold uppercase tracking-widest font-heading text-white hover:text-brand-gold">Contact</Link>
 
                     <div className="pt-12 flex flex-col items-center space-y-4">
@@ -90,7 +90,7 @@ const Layout = () => {
                     <h3 className="text-2xl font-bold tracking-[0.2em] font-heading mb-10 text-white">TANDEM <span className="text-brand-gold">ACQUISITIONS</span></h3>
                     <div className="flex justify-center space-x-12 mb-12">
                         <Link to="/" className="text-xs uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors">Home</Link>
-                        <a href="/#tandem-method" className="text-xs uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors">Method</a>
+                        <a href={`${import.meta.env.BASE_URL}#tandem-method`} className="text-xs uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors">Method</a>
                         <Link to="/contact" className="text-xs uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors">Contact</Link>
                     </div>
                     <div className="flex justify-center space-x-6 mb-12">
