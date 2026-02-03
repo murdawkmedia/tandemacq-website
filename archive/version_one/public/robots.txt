@@ -1,0 +1,13 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://tandemacq.com/sitemap.xml
+
+# Crawl-delay (optional, be gentle on the server)
+Crawl-delay: 1
+
+# Disallow common non-content paths
+Disallow: /node_modules/
+Disallow: /.git/
