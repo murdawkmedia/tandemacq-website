@@ -58,8 +58,8 @@ const Contact = () => {
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-16">
-                        <h1 className="text-4xl md:text-6xl font-bold text-brand-black mb-4">Get in Touch</h1>
-                        <p className="text-xl text-brand-grey">Looking to sell? Let's talk numbers and legacy.</p>
+                        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Get in Touch</h1>
+                        <p className="text-xl text-gray-200">Looking to sell? Let's talk numbers and legacy.</p>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
@@ -69,24 +69,24 @@ const Contact = () => {
                                 <div className="w-12 h-12 bg-brand-light rounded-full flex items-center justify-center mb-4">
                                     <Mail className="text-brand-gold" size={24} />
                                 </div>
-                                <h3 className="font-bold text-lg mb-1">Email Us</h3>
-                                <a href="mailto:tom@tandemacq.com" className="text-brand-grey hover:text-brand-gold">tom@tandemacq.com</a>
+                                <h3 className="font-bold text-lg mb-1 text-gray-900">Email Us</h3>
+                                <a href="mailto:tom@tandemacq.com" className="text-gray-700 hover:text-brand-gold">tom@tandemacq.com</a>
                             </div>
 
                             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                                 <div className="w-12 h-12 bg-brand-light rounded-full flex items-center justify-center mb-4">
                                     <Phone className="text-brand-gold" size={24} />
                                 </div>
-                                <h3 className="font-bold text-lg mb-1">Call Us</h3>
-                                <a href="tel:2537408400" className="text-brand-grey hover:text-brand-gold">253-740-8400</a>
+                                <h3 className="font-bold text-lg mb-1 text-gray-900">Call Us</h3>
+                                <a href="tel:2537408400" className="text-gray-700 hover:text-brand-gold">253-740-8400</a>
                             </div>
 
                             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                                 <div className="w-12 h-12 bg-brand-light rounded-full flex items-center justify-center mb-4">
                                     <MapPin className="text-brand-gold" size={24} />
                                 </div>
-                                <h3 className="font-bold text-lg mb-1">Location</h3>
-                                <p className="text-brand-grey">USA (National)</p>
+                                <h3 className="font-bold text-lg mb-1 text-gray-900">Location</h3>
+                                <p className="text-gray-700">USA (National)</p>
                             </div>
                         </div>
 
@@ -95,23 +95,23 @@ const Contact = () => {
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
-                                        <label className="block text-sm font-semibold text-brand-black mb-2">Full Name</label>
-                                        <input type="text" name="name" onChange={handleChange} className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-all" placeholder="John Doe" required />
+                                        <label className="block text-sm font-semibold text-black mb-2">Full Name</label>
+                                        <input type="text" name="name" onChange={handleChange} className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-900 placeholder-gray-500 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-all" placeholder="John Doe" required />
                                     </div>
                                     <div>
-                                        <label className="block text-sm font-semibold text-brand-black mb-2">Email Address</label>
-                                        <input type="email" name="email" onChange={handleChange} className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-all" placeholder="john@example.com" required />
+                                        <label className="block text-sm font-semibold text-black mb-2">Email Address</label>
+                                        <input type="email" name="email" onChange={handleChange} className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-900 placeholder-gray-500 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-all" placeholder="john@example.com" required />
                                     </div>
                                 </div>
 
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
-                                        <label className="block text-sm font-semibold text-brand-black mb-2">Phone Number</label>
-                                        <input type="tel" name="phone" onChange={handleChange} className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-all" placeholder="(555) 000-0000" />
+                                        <label className="block text-sm font-semibold text-black mb-2">Phone Number</label>
+                                        <input type="tel" name="phone" onChange={handleChange} className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-900 placeholder-gray-500 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-all" placeholder="(555) 000-0000" />
                                     </div>
                                     <div>
-                                        <label className="block text-sm font-semibold text-brand-black mb-2">Business Type</label>
-                                        <select name="businessType" onChange={handleChange} className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-all">
+                                        <label className="block text-sm font-semibold text-black mb-2">Business Type</label>
+                                        <select name="businessType" onChange={handleChange} className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-900 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-all">
                                             <option value="">Select Sector...</option>
                                             <option value="HVAC">HVAC</option>
                                             <option value="Plumbing">Plumbing</option>
@@ -123,8 +123,8 @@ const Contact = () => {
                                 </div>
 
                                 <div>
-                                    <label className="block text-sm font-semibold text-brand-black mb-2">Annual Revenue Range</label>
-                                    <select name="revenue" onChange={handleChange} className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-all">
+                                    <label className="block text-sm font-semibold text-black mb-2">Annual Revenue Range</label>
+                                    <select name="revenue" onChange={handleChange} className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-900 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-all">
                                         <option value="">Select Revenue...</option>
                                         <option value="<$1M">Less than $1M</option>
                                         <option value="$1M-$5M">$1M - $5M</option>
@@ -135,8 +135,8 @@ const Contact = () => {
                                 </div>
 
                                 <div>
-                                    <label className="block text-sm font-semibold text-brand-black mb-2">Message</label>
-                                    <textarea name="message" onChange={handleChange} rows="4" className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-all" placeholder="Tell us a bit about your business..."></textarea>
+                                    <label className="block text-sm font-semibold text-black mb-2">Message</label>
+                                    <textarea name="message" onChange={handleChange} rows="4" className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-900 placeholder-gray-500 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-all" placeholder="Tell us a bit about your business..."></textarea>
                                 </div>
 
                                 {submitStatus === 'success' ? (

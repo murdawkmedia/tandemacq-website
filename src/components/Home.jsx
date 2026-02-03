@@ -11,15 +11,15 @@ const Home = () => {
             <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/assets/hero_tom.png"
-                        alt="Background"
-                        className="w-full h-full object-cover object-top opacity-60"
+                        src="/assets/tandem-acquisitions-hero.png"
+                        alt="Thomas McElwrath - Strategic Business Advisor"
+                        className="w-full h-full object-cover object-[50%_20%] opacity-60 scale-125 translate-x-[15%]"
                     />
                     {/* Adjusted Gradient: Lighter at the top to show the head, darker at bottom for text contrast */}
                     <div className="absolute inset-0 bg-gradient-to-b from-brand-slate/10 via-brand-slate/60 to-brand-slate"></div>
                 </div>
 
-                <div className="container mx-auto px-6 relative z-10 text-center max-w-5xl pt-20">
+                <div className="container mx-auto px-6 relative z-10 text-center max-w-5xl pt-44">
                     <span className="inline-block px-4 py-2 mb-8 text-[10px] font-bold tracking-[0.3em] text-brand-gold uppercase border border-brand-gold/30 rounded-full bg-brand-gold/5 backdrop-blur-sm animate-fade-in">
                         Strategic Business Advisory
                     </span>
@@ -32,7 +32,7 @@ const Home = () => {
                     <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in delay-300">
                         <button
                             onClick={() => setIsWaitlistOpen(true)}
-                            className="glass-button text-white border-brand-gold/50 hover:bg-brand-gold hover:border-brand-gold hover:text-white backdrop-blur-md bg-white/5"
+                            className="bg-brand-gold text-brand-dark font-bold py-4 px-10 rounded-full hover:bg-white hover:text-brand-dark transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]"
                         >
                             Join The Waitlist
                         </button>
@@ -57,7 +57,7 @@ const Home = () => {
             </section>
 
             {/* The 4-Step Process - Vertical Timeline */}
-            <section id="services" className="py-32 relative">
+            <section id="tandem-method" className="py-32 relative">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-24">
                         <span className="text-brand-gold text-xs font-bold tracking-[0.3em] uppercase block mb-4">The Roadmap</span>

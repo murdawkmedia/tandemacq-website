@@ -33,29 +33,30 @@ const Layout = () => {
     return (
         <div className="flex flex-col min-h-screen font-body text-brand-white bg-brand-slate">
             {/* Header */}
-            <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-brand-slate/95 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-6'}`}>
-                <div className="container mx-auto px-6 flex justify-between items-center relative">
+            <header className="sticky top-0 z-50 bg-brand-slate/95 backdrop-blur-md shadow-lg py-2 transition-all duration-300">
+                <div className="container mx-auto px-6 grid grid-cols-[auto_1fr_auto] md:grid-cols-3 items-center relative">
 
                     {/* Mobile Menu Button - Left on mobile */}
                     <button
-                        className="md:hidden text-white hover:text-brand-gold transition-colors z-50"
+                        className="md:hidden text-white hover:text-brand-gold transition-colors z-50 justify-self-start"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >
                         {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
 
                     {/* Navigation Links - Left Side (Desktop) */}
-                    <nav className="hidden md:flex items-center space-x-12 flex-1 justify-start">
+                    <nav className="hidden md:flex items-center space-x-12 justify-self-start">
                         <Link to="/" className="text-sm font-bold uppercase tracking-widest hover:text-brand-gold transition-colors font-heading text-white">Home</Link>
-                        <a href="/#services" className="text-sm font-bold uppercase tracking-widest hover:text-brand-gold transition-colors font-heading text-white">Our Method</a>
+                        <a href="/#tandem-method" className="text-sm font-bold uppercase tracking-widest hover:text-brand-gold transition-colors font-heading text-white">Our Method</a>
                     </nav>
 
                     {/* Logo - Centered */}
-                    <Link to="/" className="flex flex-col items-center justify-center absolute left-1/2 transform -translate-x-1/2 group">
-                        <span className="text-2xl md:text-3xl font-bold tracking-[0.2em] font-heading group-hover:text-brand-gold transition-colors text-center text-white">
-                            TANDEM
-                        </span>
-                        <span className="text-[10px] uppercase tracking-[0.4em] text-brand-gold/90 font-bold mt-1">Acquisitions</span>
+                    <Link to="/" className="justify-self-center group py-1">
+                        <img
+                            src="/assets/logo-transparent.png"
+                            alt="Tandem Acquisitions"
+                            className="h-16 md:h-20 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+                        />
                     </Link>
 
                     {/* Navigation Links / CTA - Right Side (Desktop) */}
@@ -70,7 +71,7 @@ const Layout = () => {
                 {/* Mobile Menu Overlay */}
                 <div className={`fixed inset-0 bg-brand-slate z-40 flex flex-col items-center justify-center space-y-8 transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
                     <Link to="/" onClick={() => setIsMenuOpen(false)} className="text-2xl font-bold uppercase tracking-widest font-heading text-white hover:text-brand-gold">Home</Link>
-                    <a href="/#services" onClick={() => setIsMenuOpen(false)} className="text-2xl font-bold uppercase tracking-widest font-heading text-white hover:text-brand-gold">Our Method</a>
+                    <a href="/#tandem-method" onClick={() => setIsMenuOpen(false)} className="text-2xl font-bold uppercase tracking-widest font-heading text-white hover:text-brand-gold">Our Method</a>
                     <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="text-2xl font-bold uppercase tracking-widest font-heading text-white hover:text-brand-gold">Contact</Link>
 
                     <div className="pt-12 flex flex-col items-center space-y-4">
@@ -89,7 +90,7 @@ const Layout = () => {
                     <h3 className="text-2xl font-bold tracking-[0.2em] font-heading mb-10 text-white">TANDEM <span className="text-brand-gold">ACQUISITIONS</span></h3>
                     <div className="flex justify-center space-x-12 mb-12">
                         <Link to="/" className="text-xs uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors">Home</Link>
-                        <a href="/#services" className="text-xs uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors">Method</a>
+                        <a href="/#tandem-method" className="text-xs uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors">Method</a>
                         <Link to="/contact" className="text-xs uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors">Contact</Link>
                     </div>
                     <div className="flex justify-center space-x-6 mb-12">
