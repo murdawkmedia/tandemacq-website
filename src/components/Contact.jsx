@@ -136,7 +136,7 @@ const Contact = () => {
 
                                 <div>
                                     <label className="block text-sm font-semibold text-black mb-2">Message</label>
-                                    <textarea name="message" onChange={handleChange} rows="4" className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-900 placeholder-gray-500 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-all" placeholder="Tell us a bit about your business..."></textarea>
+                                    <textarea name="message" onChange={handleChange} rows="4" className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-900 placeholder-gray-500 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold outline-none transition-all" placeholder="How can we help you?"></textarea>
                                 </div>
 
                                 {submitStatus === 'success' ? (
@@ -151,7 +151,7 @@ const Contact = () => {
                                         <button
                                             type="submit"
                                             disabled={isSubmitting}
-                                            className="w-full py-4 bg-brand-black text-white font-bold rounded-lg hover:bg-brand-gold transition-all duration-300 flex items-center justify-center disabled:opacity-70"
+                                            className="w-full py-4 bg-gray-900 text-white font-bold rounded-xl hover:bg-brand-gold transition-all duration-300 shadow-xl hover:shadow-brand-gold/30 flex items-center justify-center disabled:opacity-70"
                                         >
                                             {isSubmitting ? (
                                                 <div className="w-6 h-6 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
