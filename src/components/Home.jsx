@@ -13,7 +13,7 @@ const Home = () => {
                     <img
                         src="/assets/hero_tom.png"
                         alt="Background"
-                        className="w-full h-full object-cover opacity-50"
+                        className="w-full h-full object-cover object-top opacity-50"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-brand-slate via-brand-slate/60 to-brand-slate"></div>
                 </div>
@@ -71,21 +71,21 @@ const Home = () => {
                         <div className="grid md:grid-cols-2 gap-16 mb-24 relative">
                             <div className="text-right md:pr-12 hidden md:block">
                                 <div className="text-9xl font-heading font-bold text-white/5 absolute right-full mr-[-4rem] top-0 selection:bg-none pointer-events-none">01</div>
-                                <h3 className="text-3xl font-heading font-normal mb-4 text-white">Identify</h3>
-                                <p className="text-gray-400 leading-relaxed text-sm">
+                                <h3 className="text-5xl font-heading font-normal mb-4 text-white">Identify</h3>
+                                <p className="text-gray-300 leading-relaxed text-xl">
                                     We start by identifying exactly where you stand compared to best-in-class peers. This baseline drives every future decision.
                                 </p>
                             </div>
                             <div className="md:pl-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
-                                <h3 className="md:hidden text-3xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">01.</span> Identify</h3>
+                                <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">01.</span> Identify</h3>
                                 <ul className="space-y-6">
                                     <li className="glass-panel p-6 rounded-lg">
-                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-xs mb-2">Valuation</h4>
-                                        <p className="text-gray-300 text-sm">Calculate your current enterprise value and align with your goals.</p>
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-2">Valuation</h4>
+                                        <p className="text-gray-300 text-lg">Calculate your current enterprise value and align with your goals.</p>
                                     </li>
                                     <li className="glass-panel p-6 rounded-lg">
-                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-xs mb-2">Risk Audit</h4>
-                                        <p className="text-gray-300 text-sm">Find the "skeletons in the closet" that could kill a deal.</p>
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-2">Risk Audit</h4>
+                                        <p className="text-gray-300 text-lg">Find the "skeletons in the closet" that could kill a deal.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -94,22 +94,22 @@ const Home = () => {
                         {/* Step 2 */}
                         <div className="grid md:grid-cols-2 gap-16 mb-24 relative">
                             <div className="order-2 md:order-1 md:text-right md:pr-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
-                                <h3 className="md:hidden text-3xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">02.</span> Protect</h3>
+                                <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">02.</span> Protect</h3>
                                 <ul className="space-y-6">
                                     <li className="glass-panel p-6 rounded-lg">
-                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-xs mb-2">De-Risking</h4>
-                                        <p className="text-gray-300 text-sm">90-day sprints to fix critical issues in Ops, Finance, and Legal.</p>
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-2">De-Risking</h4>
+                                        <p className="text-gray-300 text-lg">90-day sprints to fix critical issues in Ops, Finance, and Legal.</p>
                                     </li>
                                     <li className="glass-panel p-6 rounded-lg">
-                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-xs mb-2">Mock Due Diligence</h4>
-                                        <p className="text-gray-300 text-sm">Proactively find and fix deal-killers before buyers do.</p>
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-2">Mock Due Diligence</h4>
+                                        <p className="text-gray-300 text-lg">Proactively find and fix deal-killers before buyers do.</p>
                                     </li>
                                 </ul>
                             </div>
                             <div className="order-1 md:order-2 md:pl-12 hidden md:block">
                                 <div className="text-9xl font-heading font-bold text-white/5 absolute left-full ml-[-4rem] top-0 selection:bg-none pointer-events-none">02</div>
-                                <h3 className="text-3xl font-heading font-normal mb-4 text-white">Protect</h3>
-                                <p className="text-gray-400 leading-relaxed text-sm">
+                                <h3 className="text-5xl font-heading font-normal mb-4 text-white">Protect</h3>
+                                <p className="text-gray-300 leading-relaxed text-xl">
                                     Before building, we must secure the foundation. We eliminate risks that could scare off buyers and optimize cash flow.
                                 </p>
                             </div>
@@ -119,17 +119,17 @@ const Home = () => {
                         <div className="grid md:grid-cols-2 gap-16 mb-24 relative">
                             <div className="text-right md:pr-12 hidden md:block">
                                 <div className="text-9xl font-heading font-bold text-white/5 absolute right-full mr-[-4rem] top-0 selection:bg-none pointer-events-none">03</div>
-                                <h3 className="text-3xl font-heading font-normal mb-4 text-white">Build</h3>
-                                <p className="text-gray-400 leading-relaxed text-sm">
+                                <h3 className="text-5xl font-heading font-normal mb-4 text-white">Build</h3>
+                                <p className="text-gray-300 leading-relaxed text-xl">
                                     With a solid foundation, we accelerate value growth to maximize your multiple (3x → 8x+).
                                 </p>
                             </div>
                             <div className="md:pl-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
-                                <h3 className="md:hidden text-3xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">03.</span> Build</h3>
+                                <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">03.</span> Build</h3>
                                 <ul className="space-y-6">
                                     <li className="glass-panel p-6 rounded-lg">
-                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-xs mb-2">Growth Acceleration</h4>
-                                        <p className="text-gray-300 text-sm">Strategically prioritizing projects that directly increase EBITDA.</p>
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-2">Growth Acceleration</h4>
+                                        <p className="text-gray-300 text-lg">Strategically prioritizing projects that directly increase EBITDA.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -138,18 +138,18 @@ const Home = () => {
                         {/* Step 4 */}
                         <div className="grid md:grid-cols-2 gap-16 relative">
                             <div className="order-2 md:order-1 md:text-right md:pr-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
-                                <h3 className="md:hidden text-3xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">04.</span> Sell</h3>
+                                <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">04.</span> Sell</h3>
                                 <ul className="space-y-6">
                                     <li className="glass-panel p-6 rounded-lg">
-                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-xs mb-2">Advisory</h4>
-                                        <p className="text-gray-300 text-sm">Evaluating offers and managing the exit process.</p>
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-2">Advisory</h4>
+                                        <p className="text-gray-300 text-lg">Evaluating offers and managing the exit process.</p>
                                     </li>
                                 </ul>
                             </div>
                             <div className="order-1 md:order-2 md:pl-12 hidden md:block">
                                 <div className="text-9xl font-heading font-bold text-white/5 absolute left-full ml-[-4rem] top-0 selection:bg-none pointer-events-none">04</div>
-                                <h3 className="text-3xl font-heading font-normal mb-4 text-white">Sell</h3>
-                                <p className="text-gray-400 leading-relaxed text-sm">
+                                <h3 className="text-5xl font-heading font-normal mb-4 text-white">Sell</h3>
+                                <p className="text-gray-300 leading-relaxed text-xl">
                                     Maximize your exit with a company that is ready for the market. We provide the strategy to ensure you win.
                                 </p>
                             </div>
