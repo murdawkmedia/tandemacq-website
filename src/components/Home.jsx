@@ -11,7 +11,7 @@ const Home = () => {
             <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/assets/tandem-acquisitions-hero.png"
+                        src={`${import.meta.env.BASE_URL}assets/tandem-acquisitions-hero.png`}
                         alt="Thomas McElwrath - Strategic Business Advisor"
                         className="w-full h-full object-cover object-[50%_20%] opacity-60 scale-125 translate-x-[15%]"
                     />

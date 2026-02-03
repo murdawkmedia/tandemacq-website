@@ -53,7 +53,7 @@ const Layout = () => {
                     {/* Logo - Centered */}
                     <Link to="/" className="justify-self-center group py-1">
                         <img
-                            src="/assets/logo-transparent.png"
+                            src={`${import.meta.env.BASE_URL}assets/logo-transparent.png`}
                             alt="Tandem Acquisitions"
                             className="h-16 md:h-20 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
                         />
