@@ -79,16 +79,38 @@ const Home = () => {
                             </div>
                             <div className="md:pl-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
                                 <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">01.</span> Identify</h3>
-                                <ul className="space-y-6">
-                                    <li className="glass-panel p-6 rounded-lg">
-                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-2">Valuation</h4>
-                                        <p className="text-gray-300 text-lg">Calculate your current enterprise value and align with your goals.</p>
-                                    </li>
-                                    <li className="glass-panel p-6 rounded-lg">
-                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-2">Risk Audit</h4>
-                                        <p className="text-gray-300 text-lg">Find the "skeletons in the closet" that could kill a deal.</p>
-                                    </li>
-                                </ul>
+                                <div className="grid gap-8">
+                                    <div className="glass-panel p-6 rounded-lg">
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Calculate Business Value</h4>
+                                        <p className="text-gray-300 text-base leading-relaxed">
+                                            Industry best practices require owners to calculate their business's enterprise value at least <span className="font-bold text-white">annually</span>. The result from this foundational step should drive every future decision, so it's paramount that it is always accurate to ensure the strategic plans dependent on it are correctly aligned.
+                                        </p>
+                                    </div>
+                                    <div className="glass-panel p-6 rounded-lg">
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Risk & Opportunity Audit</h4>
+                                        <p className="text-gray-300 text-base leading-relaxed">
+                                            Before a business owner should consider investing resources into growing their business, best practices require them first to conduct a full risk/opportunity audit to identify and prioritize: (a) cracks in the foundation; (b) skeletons in the closet; and (c) potential red flags which would either make their business unsellable or result in an insultingly low offer.
+                                        </p>
+                                    </div>
+                                    <div className="glass-panel p-6 rounded-lg">
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Wealth Gap Assessment</h4>
+                                        <p className="text-gray-300 text-base leading-relaxed">
+                                            With 70-80% of most business owners' net worth tethered their company, and only 5% of business owners happy with the net results of the sale of their business, owners use this assessment to calculate the minimum value they need to sell their company for to sustain their desired lifestyle after exiting.
+                                        </p>
+                                    </div>
+                                    <div className="glass-panel p-6 rounded-lg">
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Value Gap Assessment</h4>
+                                        <p className="text-gray-300 text-base leading-relaxed">
+                                            For those business owners who want to calculate the difference between their company's current business value (e.g., Enterprise Value) and the business's potential valuation if they were to perform at best-in-class levels in relation to EBITDA.
+                                        </p>
+                                    </div>
+                                    <div className="glass-panel p-6 rounded-lg">
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Profit Gap Assessment</h4>
+                                        <p className="text-gray-300 text-base leading-relaxed">
+                                            Calculate the difference between a business's current profitability and the potential profitability it could achieve by optimizing benchmarks.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
