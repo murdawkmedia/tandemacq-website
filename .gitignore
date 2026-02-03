@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Agent configuration
+.agent/
+
+# Internal Documentation & Archives
+archive/
+Documents/
