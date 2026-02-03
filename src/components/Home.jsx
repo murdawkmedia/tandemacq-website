@@ -118,16 +118,43 @@ const Home = () => {
                         <div className="grid md:grid-cols-2 gap-16 mb-24 relative">
                             <div className="order-2 md:order-1 md:text-right md:pr-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
                                 <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">02.</span> Protect</h3>
-                                <ul className="space-y-6">
-                                    <li className="glass-panel p-6 rounded-lg">
-                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-2">De-Risking</h4>
-                                        <p className="text-gray-300 text-lg">90-day sprints to fix critical issues in Ops, Finance, and Legal.</p>
-                                    </li>
-                                    <li className="glass-panel p-6 rounded-lg">
-                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-2">Mock Due Diligence</h4>
-                                        <p className="text-gray-300 text-lg">Proactively find and fix deal-killers before buyers do.</p>
-                                    </li>
-                                </ul>
+                                <p className="text-gray-400 mb-8 italic">We consult with you to prepare your business to have a solid foundation we will be able to build on later by eliminating or reducing your identified risks.</p>
+                                <div className="grid gap-8">
+                                    <div className="glass-panel p-6 rounded-lg">
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Focused Risk Abatement</h4>
+                                        <p className="text-gray-300 text-base leading-relaxed mb-4">
+                                            Using your customized project roadmap generated from the <span className="text-white font-semibold">In-Depth Business Risk & Opportunity Assessment</span>, your first 12 months, utilizing 90-day sprints, will be exclusively dedicated to implementing industry best practices and completing all Level 1: PROTECT projects.
+                                        </p>
+                                        <ul className="text-sm text-gray-400 grid grid-cols-2 gap-2 text-left">
+                                            <li>• Strategic Planning</li>
+                                            <li>• People / Culture</li>
+                                            <li>• Leadership</li>
+                                            <li>• Operations</li>
+                                            <li>• Sales</li>
+                                            <li>• Finance</li>
+                                            <li>• Marketing</li>
+                                            <li>• Legal</li>
+                                        </ul>
+                                    </div>
+                                    <div className="glass-panel p-6 rounded-lg">
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Proactive Due Diligence</h4>
+                                        <p className="text-gray-300 text-base leading-relaxed">
+                                            With 50% of buyer's rescinding their offers/LOIs during the due diligence phase, why not proactively run through a due diligence practice well in advance? Identify all potential deal-killing risks and resolve them—or at least develop a plan to reduce their potential perceived risk by a future buyer.
+                                        </p>
+                                    </div>
+                                    <div className="glass-panel p-6 rounded-lg">
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Cash Flow Management Strategy</h4>
+                                        <p className="text-gray-300 text-base leading-relaxed mb-4">
+                                            We train you to run your company utilizing proven cash flow allocations strategies based on your business's respective tiered Targeted Allocation Percentages (TAPs), utilizing different accounts for at least:
+                                        </p>
+                                        <ul className="text-sm text-gray-400 flex flex-wrap gap-x-6 gap-y-2 justify-end">
+                                            <li>• Profit</li>
+                                            <li>• Owner's Pay</li>
+                                            <li>• Tax</li>
+                                            <li>• OpEx</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div className="order-1 md:order-2 md:pl-12 hidden md:block">
                                 <div className="text-9xl font-heading font-bold text-white/5 absolute left-full ml-[-4rem] top-0 selection:bg-none pointer-events-none">02</div>
@@ -149,12 +176,13 @@ const Home = () => {
                             </div>
                             <div className="md:pl-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
                                 <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">03.</span> Build</h3>
-                                <ul className="space-y-6">
-                                    <li className="glass-panel p-6 rounded-lg">
-                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-2">Growth Acceleration</h4>
-                                        <p className="text-gray-300 text-lg">Strategically prioritizing projects that directly increase EBITDA.</p>
-                                    </li>
-                                </ul>
+                                <p className="text-gray-400 mb-8 italic">Now that you've created a solid foundation, it's time to start focusing on building your business' enterprise value.</p>
+                                <div className="glass-panel p-6 rounded-lg">
+                                    <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Value Growth Acceleration</h4>
+                                    <p className="text-gray-300 text-base leading-relaxed">
+                                        We train you to transform your successful company into a significant business by strategically prioritizing, targeting and completing focused value growth projects.
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
@@ -162,12 +190,13 @@ const Home = () => {
                         <div className="grid md:grid-cols-2 gap-16 relative">
                             <div className="order-2 md:order-1 md:text-right md:pr-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
                                 <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">04.</span> Sell</h3>
-                                <ul className="space-y-6">
-                                    <li className="glass-panel p-6 rounded-lg">
-                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-2">Advisory</h4>
-                                        <p className="text-gray-300 text-lg">Evaluating offers and managing the exit process.</p>
-                                    </li>
-                                </ul>
+                                <p className="text-gray-400 mb-8 italic">Now that you've created a Significant Company, it's time to prepare to sift through unsolicited or solicited offers to purchase your business.</p>
+                                <div className="glass-panel p-6 rounded-lg">
+                                    <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Seller Advisory Services</h4>
+                                    <p className="text-gray-300 text-base leading-relaxed">
+                                        Customized strategic services to evaluate and achieve the desired result.
+                                    </p>
+                                </div>
                             </div>
                             <div className="order-1 md:order-2 md:pl-12 hidden md:block">
                                 <div className="text-9xl font-heading font-bold text-white/5 absolute left-full ml-[-4rem] top-0 selection:bg-none pointer-events-none">04</div>
