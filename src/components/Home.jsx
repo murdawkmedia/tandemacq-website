@@ -13,25 +13,26 @@ const Home = () => {
                     <img
                         src="/assets/hero_tom.png"
                         alt="Background"
-                        className="w-full h-full object-cover object-top opacity-50"
+                        className="w-full h-full object-cover object-top opacity-60"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-brand-slate via-brand-slate/60 to-brand-slate"></div>
+                    {/* Adjusted Gradient: Lighter at the top to show the head, darker at bottom for text contrast */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-brand-slate/10 via-brand-slate/60 to-brand-slate"></div>
                 </div>
 
-                <div className="container mx-auto px-6 relative z-10 text-center max-w-5xl">
+                <div className="container mx-auto px-6 relative z-10 text-center max-w-5xl pt-20">
                     <span className="inline-block px-4 py-2 mb-8 text-[10px] font-bold tracking-[0.3em] text-brand-gold uppercase border border-brand-gold/30 rounded-full bg-brand-gold/5 backdrop-blur-sm animate-fade-in">
                         Strategic Business Advisory
                     </span>
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-normal text-white mb-8 leading-[1.1] tracking-tight animate-fade-in delay-100">
+                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-normal text-white mb-8 leading-[1.1] tracking-tight animate-fade-in delay-100 drop-shadow-lg">
                         Transforming <br /> <span className="text-white/80">Successful Businesses</span> <br /> Into <span className="text-brand-gold italic font-light">Significant</span> Ones.
                     </h1>
-                    <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto font-light leading-relaxed animate-fade-in delay-200">
+                    <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-2xl mx-auto font-light leading-relaxed animate-fade-in delay-200 drop-shadow-md">
                         Don't leave your legacy to chance. We guide you to build a company that is Valuable, Transferable, Ready, and Attractive.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in delay-300">
                         <button
                             onClick={() => setIsWaitlistOpen(true)}
-                            className="glass-button text-white border-brand-gold/50 hover:bg-brand-gold hover:border-brand-gold hover:text-white"
+                            className="glass-button text-white border-brand-gold/50 hover:bg-brand-gold hover:border-brand-gold hover:text-white backdrop-blur-md bg-white/5"
                         >
                             Join The Waitlist
                         </button>
