@@ -355,7 +355,7 @@ const Home = () => {
                     </div>
 
                     {/* System Note */}
-                    <div className="mt-12 text-center max-w-3xl mx-auto">
+                    <div className="mt-12 mb-12 text-center max-w-3xl mx-auto">
                         <p className="text-xl text-white italic font-light">
                             This is not advice in isolation—it is a structured system for building, protecting, and realizing enterprise value.
                         </p>
