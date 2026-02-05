@@ -159,7 +159,7 @@ const Home = () => {
             </section>
 
             {/* Our Team Section */}
-            <section className="pt-12 pb-32 bg-brand-slate">
+            <section className="pt-12 pb-20 bg-brand-slate">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-heading font-light tracking-wide">OUR TEAM</h2>
@@ -187,7 +187,7 @@ const Home = () => {
             </section>
 
             {/* The 4-Step Process - TANDEM SERVICES */}
-            <section id="tandem-method" className="pt-32 pb-0 relative bg-brand-dark/30">
+            <section id="tandem-method" className="pt-20 pb-0 relative bg-brand-dark/30">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-24">
                         <span className="text-brand-gold text-xs font-bold tracking-[0.3em] uppercase block mb-4">The Roadmap</span>
