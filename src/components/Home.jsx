@@ -251,7 +251,16 @@ const Home = () => {
 
                         {/* Step 2: Protect */}
                         <div className="grid md:grid-cols-2 gap-16 mb-24 relative">
-                            <div className="order-2 md:order-1 md:text-right md:pr-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
+                            <div className="text-right md:pr-12 hidden md:block">
+                                <div className="flex items-center justify-end gap-4 mb-4 relative">
+                                    <div className="text-9xl font-heading font-bold text-white/10 leading-none selection:bg-none pointer-events-none -mb-4">02</div>
+                                    <h3 className="text-5xl font-heading font-normal text-white relative z-10">Protect</h3>
+                                </div>
+                                <p className="text-gray-200 leading-relaxed text-xl">
+                                    De-risk the business and fortify the foundation.
+                                </p>
+                            </div>
+                            <div className="md:pl-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
                                 <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">02.</span> Protect</h3>
                                 <p className="text-gray-400 mb-8 italic">De-risk the business and fortify the foundation. We work with you to systematically reduce or eliminate the risks identified in Step 1, ensuring the business is structurally sound before accelerating growth.</p>
                                 <div className="grid gap-6">
@@ -296,16 +305,6 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="order-1 md:order-2 md:pl-12 hidden md:block">
-                                <div className="flex items-center justify-start gap-4 mb-4 relative">
-                                    <h3 className="text-5xl font-heading font-normal text-white relative z-10">Protect</h3>
-                                    <div className="text-9xl font-heading font-bold text-white/10 leading-none selection:bg-none pointer-events-none -mb-4">02</div>
-                                </div>
-                                <h3 className="sr-only">Protect</h3>
-                                <p className="text-gray-200 leading-relaxed text-xl">
-                                    De-risk the business and fortify the foundation.
-                                </p>
-                            </div>
                         </div>
 
                         {/* Step 3: Build */}
@@ -333,7 +332,16 @@ const Home = () => {
 
                         {/* Step 4: Sell or remain Best-in-Class */}
                         <div className="grid md:grid-cols-2 gap-16 relative">
-                            <div className="order-2 md:order-1 md:text-right md:pr-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
+                            <div className="text-right md:pr-12 hidden md:block">
+                                <div className="flex items-center justify-end gap-4 mb-4 relative">
+                                    <div className="text-9xl font-heading font-bold text-white/10 leading-none selection:bg-none pointer-events-none -mb-4">04</div>
+                                    <h3 className="text-5xl font-heading font-normal text-white relative z-10">Sell or remain Best-in-Class</h3>
+                                </div>
+                                <p className="text-gray-200 leading-relaxed text-xl">
+                                    Prepare for and manage outcomes.
+                                </p>
+                            </div>
+                            <div className="md:pl-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
                                 <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">04.</span> Sell or remain Best-in-Class</h3>
                                 <p className="text-gray-400 mb-8 italic">Prepare for and manage outcomes. Once the business has reached "significant" status, we help you navigate inbound or outbound transaction opportunities with discipline and clarity.</p>
                                 <div className="glass-panel p-6 rounded-lg">
@@ -342,13 +350,6 @@ const Home = () => {
                                         Customized advisory support to evaluate offers, manage process, and achieve outcomes aligned with your financial, personal, and strategic objectives.
                                     </p>
                                 </div>
-                            </div>
-                            <div className="order-1 md:order-2 md:pl-12 hidden md:block">
-                                <div className="text-9xl font-heading font-bold text-white/10 absolute left-full ml-[-4rem] top-0 selection:bg-none pointer-events-none">04</div>
-                                <h3 className="text-5xl font-heading font-normal mb-4 text-white">Sell or remain Best-in-Class</h3>
-                                <p className="text-gray-200 leading-relaxed text-xl">
-                                    Prepare for and manage outcomes.
-                                </p>
                             </div>
                         </div>
 
