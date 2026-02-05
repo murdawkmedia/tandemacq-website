@@ -57,7 +57,7 @@ const Layout = () => {
                             alt="Tandem Acquisitions"
                             className="h-16 md:h-20 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
                         />
-                        <span className="ml-3 text-xl font-heading font-bold tracking-widest text-white group-hover:text-brand-gold transition-colors">TANDEM</span>
+
                     </Link>
 
                     {/* Navigation Links / CTA - Right Side (Desktop) */}

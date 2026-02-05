@@ -199,7 +199,7 @@ const Home = () => {
                         {/* Step 1: Identify */}
                         <div className="grid md:grid-cols-2 gap-16 mb-24 relative">
                             <div className="text-right md:pr-12 hidden md:block">
-                                <div className="text-9xl font-heading font-bold text-white/10 absolute right-full mr-[-4rem] top-0 selection:bg-none pointer-events-none">01</div>
+                                <div className="text-9xl font-heading font-bold text-white/10 absolute right-48 mr-[-4rem] top-0 selection:bg-none pointer-events-none">01</div>
                                 <h3 className="text-5xl font-heading font-normal mb-4 text-white">Identify</h3>
                                 <p className="text-gray-300 leading-relaxed text-xl mb-4">
                                     Establish clarity on value, risk, and upside.
@@ -293,7 +293,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className="order-1 md:order-2 md:pl-12 hidden md:block">
-                                <div className="text-9xl font-heading font-bold text-white/10 absolute left-full ml-[-4rem] top-0 selection:bg-none pointer-events-none">02</div>
+                                <div className="text-9xl font-heading font-bold text-white/10 absolute left-0 ml-4 top-0 selection:bg-none pointer-events-none">02</div>
                                 <h3 className="text-5xl font-heading font-normal mb-4 text-white">Protect</h3>
                                 <p className="text-gray-200 leading-relaxed text-xl">
                                     De-risk the business and fortify the foundation.
@@ -304,7 +304,7 @@ const Home = () => {
                         {/* Step 3: Build */}
                         <div className="grid md:grid-cols-2 gap-16 mb-24 relative">
                             <div className="text-right md:pr-12 hidden md:block">
-                                <div className="text-9xl font-heading font-bold text-white/10 absolute right-full mr-[-4rem] top-0 selection:bg-none pointer-events-none">03</div>
+                                <div className="text-9xl font-heading font-bold text-white/10 absolute right-32 mr-[-4rem] top-0 selection:bg-none pointer-events-none">03</div>
                                 <h3 className="text-5xl font-heading font-normal mb-4 text-white">Build</h3>
                                 <p className="text-gray-200 leading-relaxed text-xl">
                                     Deliberately grow enterprise value.
