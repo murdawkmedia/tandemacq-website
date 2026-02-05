@@ -49,12 +49,14 @@ const Home = () => {
                     <p className="text-xl text-gray-300 leading-relaxed mb-8">
                         The <span className="text-brand-gold font-bold">TANDEM</span> approach identifies and closes the gaps that limit scale, capital access, and exit outcomes. We work alongside owners and investors to strengthen operating fundamentals, improve finance ability, and translate performance into sustainable enterprise value.
                     </p>
-                    <button
-                        onClick={() => setIsWaitlistOpen(true)}
-                        className="text-brand-gold font-bold uppercase tracking-widest text-sm hover:text-white transition-colors"
-                    >
-                        Join the wait list →
-                    </button>
+                    <div className="flex justify-center">
+                        <button
+                            onClick={() => setIsWaitlistOpen(true)}
+                            className="bg-brand-gold text-brand-dark font-bold py-4 px-10 rounded-full hover:bg-white hover:text-brand-dark transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]"
+                        >
+                            JOIN THE WAITLIST
+                        </button>
+                    </div>
                 </div>
             </section>
 
