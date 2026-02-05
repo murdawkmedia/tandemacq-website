@@ -297,8 +297,11 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className="order-1 md:order-2 md:pl-12 hidden md:block">
-                                <div className="text-9xl font-heading font-bold text-white/10 absolute left-full ml-[-4rem] top-0 selection:bg-none pointer-events-none">02</div>
-                                <h3 className="text-5xl font-heading font-normal mb-4 text-white">Protect</h3>
+                                <div className="flex items-center justify-start gap-4 mb-4 relative">
+                                    <h3 className="text-5xl font-heading font-normal text-white relative z-10">Protect</h3>
+                                    <div className="text-9xl font-heading font-bold text-white/10 leading-none selection:bg-none pointer-events-none -mb-4">02</div>
+                                </div>
+                                <h3 className="sr-only">Protect</h3>
                                 <p className="text-gray-200 leading-relaxed text-xl">
                                     De-risk the business and fortify the foundation.
                                 </p>
@@ -308,8 +311,10 @@ const Home = () => {
                         {/* Step 3: Build */}
                         <div className="grid md:grid-cols-2 gap-16 mb-24 relative">
                             <div className="text-right md:pr-12 hidden md:block">
-                                <div className="text-9xl font-heading font-bold text-white/10 absolute right-full mr-[-4rem] top-0 selection:bg-none pointer-events-none">03</div>
-                                <h3 className="text-5xl font-heading font-normal mb-4 text-white">Build</h3>
+                                <div className="flex items-center justify-end gap-4 mb-4 relative">
+                                    <div className="text-9xl font-heading font-bold text-white/10 leading-none selection:bg-none pointer-events-none -mb-4">03</div>
+                                    <h3 className="text-5xl font-heading font-normal text-white relative z-10">Build</h3>
+                                </div>
                                 <p className="text-gray-200 leading-relaxed text-xl">
                                     Deliberately grow enterprise value.
                                 </p>
