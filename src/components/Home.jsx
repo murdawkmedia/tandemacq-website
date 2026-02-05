@@ -200,9 +200,11 @@ const Home = () => {
 
                         {/* Step 1: Identify */}
                         <div className="grid md:grid-cols-2 gap-16 mb-24 relative">
-                            <div className="text-right md:pr-56 hidden md:block">
-                                <div className="text-9xl font-heading font-bold text-white/10 absolute right-full mr-[-4rem] top-0 selection:bg-none pointer-events-none">01</div>
-                                <h3 className="text-5xl font-heading font-normal mb-4 text-white">Identify</h3>
+                            <div className="text-right md:pr-12 hidden md:block">
+                                <div className="flex items-center justify-end gap-4 mb-4 relative">
+                                    <div className="text-9xl font-heading font-bold text-white/10 leading-none selection:bg-none pointer-events-none -mb-4">01</div>
+                                    <h3 className="text-5xl font-heading font-normal text-white relative z-10">Identify</h3>
+                                </div>
                                 <p className="text-gray-300 leading-relaxed text-xl mb-4">
                                     Establish clarity on value, risk, and upside.
                                 </p>
