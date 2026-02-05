@@ -101,48 +101,50 @@ const Home = () => {
                                     At TANDEM, we help owners transform a <em className="text-white">successful company</em> into a <em className="text-brand-gold">significant business</em>—one that is:
                                 </p>
                             </div>
+
+                            {/* 4 Pillars - Moved to Right Column */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-12">
+                                <div className="glass-panel p-6 rounded-xl text-center hover-lift">
+                                    <div className="w-12 h-12 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <DollarSign className="text-brand-gold" size={24} />
+                                    </div>
+                                    <h4 className="text-lg font-bold text-white mb-2">1. Valuable</h4>
+                                    <p className="text-gray-400 text-xs leading-relaxed">
+                                        Possessing an enterprise value that meets or exceeds your future financial requirements.
+                                    </p>
+                                </div>
+                                <div className="glass-panel p-6 rounded-xl text-center hover-lift">
+                                    <div className="w-12 h-12 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <Settings className="text-brand-gold" size={24} />
+                                    </div>
+                                    <h4 className="text-lg font-bold text-white mb-2">2. Transferable</h4>
+                                    <p className="text-gray-400 text-xs leading-relaxed">
+                                        Designed to operate efficiently without your constant, direct involvement.
+                                    </p>
+                                </div>
+                                <div className="glass-panel p-6 rounded-xl text-center hover-lift">
+                                    <div className="w-12 h-12 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <Target className="text-brand-gold" size={24} />
+                                    </div>
+                                    <h4 className="text-lg font-bold text-white mb-2">3. Ready</h4>
+                                    <p className="text-gray-400 text-xs leading-relaxed">
+                                        Positioned to transfer at any time, not only when circumstances force a decision.
+                                    </p>
+                                </div>
+                                <div className="glass-panel p-6 rounded-xl text-center hover-lift">
+                                    <div className="w-12 h-12 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <TrendingUp className="text-brand-gold" size={24} />
+                                    </div>
+                                    <h4 className="text-lg font-bold text-white mb-2">4. Attractive</h4>
+                                    <p className="text-gray-400 text-xs leading-relaxed">
+                                        Compelling to buyers due to strong human, structural, customer, and cultural capital.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    {/* 4 Pillars of a Significant Business */}
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
-                        <div className="glass-panel p-8 rounded-xl text-center hover-lift">
-                            <div className="w-16 h-16 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <DollarSign className="text-brand-gold" size={32} />
-                            </div>
-                            <h4 className="text-xl font-bold text-white mb-4">1. Valuable</h4>
-                            <p className="text-gray-400 text-sm leading-relaxed">
-                                Possessing an enterprise value that meets or exceeds your future financial requirements.
-                            </p>
-                        </div>
-                        <div className="glass-panel p-8 rounded-xl text-center hover-lift">
-                            <div className="w-16 h-16 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <Settings className="text-brand-gold" size={32} />
-                            </div>
-                            <h4 className="text-xl font-bold text-white mb-4">2. Transferable</h4>
-                            <p className="text-gray-400 text-sm leading-relaxed">
-                                Designed to operate efficiently without your constant, direct involvement.
-                            </p>
-                        </div>
-                        <div className="glass-panel p-8 rounded-xl text-center hover-lift">
-                            <div className="w-16 h-16 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <Target className="text-brand-gold" size={32} />
-                            </div>
-                            <h4 className="text-xl font-bold text-white mb-4">3. Ready</h4>
-                            <p className="text-gray-400 text-sm leading-relaxed">
-                                Positioned to transfer at any time, not only when circumstances force a decision.
-                            </p>
-                        </div>
-                        <div className="glass-panel p-8 rounded-xl text-center hover-lift">
-                            <div className="w-16 h-16 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <TrendingUp className="text-brand-gold" size={32} />
-                            </div>
-                            <h4 className="text-xl font-bold text-white mb-4">4. Attractive</h4>
-                            <p className="text-gray-400 text-sm leading-relaxed">
-                                Compelling to buyers due to strong human, structural, customer, and cultural capital.
-                            </p>
-                        </div>
-                    </div>
+
 
                     {/* Callout */}
                     <div className="mt-16 text-center">
@@ -198,8 +200,8 @@ const Home = () => {
 
                         {/* Step 1: Identify */}
                         <div className="grid md:grid-cols-2 gap-16 mb-24 relative">
-                            <div className="text-right md:pr-12 hidden md:block">
-                                <div className="text-9xl font-heading font-bold text-white/10 absolute right-48 mr-[-4rem] top-0 selection:bg-none pointer-events-none">01</div>
+                            <div className="text-right md:pr-56 hidden md:block">
+                                <div className="text-9xl font-heading font-bold text-white/10 absolute right-full mr-[-4rem] top-0 selection:bg-none pointer-events-none">01</div>
                                 <h3 className="text-5xl font-heading font-normal mb-4 text-white">Identify</h3>
                                 <p className="text-gray-300 leading-relaxed text-xl mb-4">
                                     Establish clarity on value, risk, and upside.
@@ -293,7 +295,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className="order-1 md:order-2 md:pl-12 hidden md:block">
-                                <div className="text-9xl font-heading font-bold text-white/10 absolute left-0 ml-4 top-0 selection:bg-none pointer-events-none">02</div>
+                                <div className="text-9xl font-heading font-bold text-white/10 absolute left-full ml-[-4rem] top-0 selection:bg-none pointer-events-none">02</div>
                                 <h3 className="text-5xl font-heading font-normal mb-4 text-white">Protect</h3>
                                 <p className="text-gray-200 leading-relaxed text-xl">
                                     De-risk the business and fortify the foundation.
@@ -304,7 +306,7 @@ const Home = () => {
                         {/* Step 3: Build */}
                         <div className="grid md:grid-cols-2 gap-16 mb-24 relative">
                             <div className="text-right md:pr-12 hidden md:block">
-                                <div className="text-9xl font-heading font-bold text-white/10 absolute right-32 mr-[-4rem] top-0 selection:bg-none pointer-events-none">03</div>
+                                <div className="text-9xl font-heading font-bold text-white/10 absolute right-full mr-[-4rem] top-0 selection:bg-none pointer-events-none">03</div>
                                 <h3 className="text-5xl font-heading font-normal mb-4 text-white">Build</h3>
                                 <p className="text-gray-200 leading-relaxed text-xl">
                                     Deliberately grow enterprise value.
