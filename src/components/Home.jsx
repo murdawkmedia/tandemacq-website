@@ -187,7 +187,7 @@ const Home = () => {
             </section>
 
             {/* The 4-Step Process - TANDEM SERVICES */}
-            <section id="tandem-method" className="py-32 relative bg-brand-dark/30">
+            <section id="tandem-method" className="pt-32 pb-0 relative bg-brand-dark/30">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-24">
                         <span className="text-brand-gold text-xs font-bold tracking-[0.3em] uppercase block mb-4">The Roadmap</span>
@@ -364,7 +364,7 @@ const Home = () => {
             </section>
 
             {/* Final CTA */}
-            <section className="py-20 relative overflow-hidden text-center bg-brand-slate">
+            <section className="pt-0 pb-20 relative overflow-hidden text-center bg-brand-slate">
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/50 to-transparent"></div>
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="max-w-2xl mx-auto bg-white/5 backdrop-blur-md border border-white/10 p-12 rounded-2xl">
