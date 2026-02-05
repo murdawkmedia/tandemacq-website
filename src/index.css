@@ -5,17 +5,17 @@
 @theme {
   --font-heading: 'Cabin', sans-serif;
   --font-body: 'Lato', sans-serif;
-  --color-brand-slate: #2F4F4F;
-  --color-brand-slate-light: #3f6060;
-  --color-brand-dark: #1a1a1a;
-  --color-brand-gold: #D4AF37;
+  --color-brand-slate: #010101;
+  --color-brand-slate-light: #1a1a1a;
+  --color-brand-dark: #000000;
+  --color-brand-gold: #ae873c;
   --color-brand-white: #ffffff;
   --color-brand-light-grey: #e5e5e5;
 }
 
 :root {
-  --brand-slate: #2F4F4F;
-  --brand-gold: #D4AF37;
+  --brand-slate: #010101;
+  --brand-gold: #ae873c;
 }
 
 html,
@@ -24,6 +24,8 @@ body {
   color: var(--color-brand-white);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
 }
 
@@ -227,4 +229,17 @@ h6,
 
 .img-zoom:hover img {
   transform: scale(1.05);
+}
+
+/* Glass Panel */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.glass-panel:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(212, 175, 55, 0.3);
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, CheckCircle, TrendingUp, Search, FileText, Settings, Play } from 'lucide-react';
+import { ArrowRight, CheckCircle, TrendingUp, Search, FileText, Settings, Play, Target, Shield, Rocket, DollarSign } from 'lucide-react';
 import WaitlistModal from './WaitlistModal';
 
 const Home = () => {
@@ -8,223 +8,368 @@ const Home = () => {
     return (
         <div className="animate-in fade-in duration-700 bg-brand-slate text-brand-white">
             {/* Hero Section - Centered & Atmospheric */}
-            <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+            <section className="relative min-h-screen flex items-start justify-start overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src={`${import.meta.env.BASE_URL}assets/tandem-acquisitions-hero.png`}
+                        src={`${import.meta.env.BASE_URL}assets/hero-presentation.png`}
                         alt="Thomas McElwrath - Strategic Business Advisor"
-                        className="w-full h-full object-cover object-[50%_20%] opacity-60 scale-125 translate-x-[15%]"
+                        className="w-full h-full object-cover object-[80%_20%] opacity-60 scale-110"
                     />
                     {/* Adjusted Gradient: Lighter at the top to show the head, darker at bottom for text contrast */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-brand-slate/10 via-brand-slate/60 to-brand-slate"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-brand-slate/90 via-brand-slate/40 to-transparent"></div>
                 </div>
 
-                <div className="container mx-auto px-6 relative z-10 text-center max-w-5xl pt-44">
+                <div className="container px-6 relative z-10 text-left max-w-2xl pt-32 ml-[5%] md:ml-[10%]">
                     <span className="inline-block px-4 py-2 mb-8 text-[10px] font-bold tracking-[0.3em] text-brand-gold uppercase border border-brand-gold/30 rounded-full bg-brand-gold/5 backdrop-blur-sm animate-fade-in">
-                        Strategic Business Advisory
+                        ADVISORY SERVICES
                     </span>
                     <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-normal text-white mb-8 leading-[1.1] tracking-tight animate-fade-in delay-100 drop-shadow-lg">
-                        Transforming <br /> <span className="text-white/80">Successful Businesses</span> <br /> Into <span className="text-brand-gold italic font-light">Significant</span> Ones.
+                        Transforming <br /> <span className="text-white/80">Successful Businesses</span> <br /> Into <span className="text-brand-gold italic font-light">Significant</span> Businesses.
                     </h1>
-                    <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-2xl mx-auto font-light leading-relaxed animate-fade-in delay-200 drop-shadow-md">
-                        Don't leave your legacy to chance. We guide you to build a company that is Valuable, Transferable, Ready, and Attractive.
+                    <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-2xl mr-auto font-light leading-relaxed animate-fade-in delay-200 drop-shadow-md">
+                        The <span className="text-brand-gold font-bold">TANDEM</span> consulting and training approach.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in delay-300">
+                    <div className="flex flex-col sm:flex-row gap-6 justify-start items-center animate-fade-in delay-300">
                         <button
                             onClick={() => setIsWaitlistOpen(true)}
                             className="bg-brand-gold text-brand-dark font-bold py-4 px-10 rounded-full hover:bg-white hover:text-brand-dark transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]"
                         >
-                            Join The Waitlist
+                            JOIN THE WAITLIST
                         </button>
                     </div>
                 </div>
             </section>
 
-            {/* Mission Section - Minimalist */}
+            {/* Growth, Value, Exit Advisory Services */}
+            <section className="py-20 bg-brand-dark/50">
+                <div className="container mx-auto px-6 text-center max-w-4xl">
+                    <h2 className="text-3xl md:text-4xl font-heading font-light text-white mb-8">
+                        Growth, Value, Exit Advisory Services
+                    </h2>
+                    <p className="text-xl text-gray-300 leading-relaxed mb-8">
+                        The <span className="text-brand-gold font-bold">TANDEM</span> approach identifies and closes the gaps that limit scale, capital access, and exit outcomes. We work alongside owners and investors to strengthen operating fundamentals, improve finance ability, and translate performance into sustainable enterprise value.
+                    </p>
+                    <button
+                        onClick={() => setIsWaitlistOpen(true)}
+                        className="text-brand-gold font-bold uppercase tracking-widest text-sm hover:text-white transition-colors"
+                    >
+                        Join the wait list →
+                    </button>
+                </div>
+            </section>
+
+            {/* About Tandem Section - 2 Column Layout */}
             <section className="py-32 bg-brand-dark/30">
                 <div className="container mx-auto px-6">
-                    <div className="max-w-3xl mx-auto text-center">
-                        <h2 className="text-3xl font-heading font-light tracking-wide mb-8">OUR MISSION</h2>
-                        <div className="w-px h-16 bg-brand-gold mx-auto mb-8"></div>
-                        <p className="text-3xl md:text-4xl leading-relaxed font-light text-gray-200 mb-12">
-                            To ensure that the <span className="text-brand-gold font-normal">70-80% of your net worth</span> tied up in your business is protected, maximized, and successfully transferred.
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl font-heading font-light tracking-wide">ABOUT TANDEM</h2>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-16 items-start">
+                        {/* Left Column: Image with stylized T */}
+                        <div className="relative">
+                            <div className="absolute inset-0 bg-brand-gold/10 transform translate-x-4 translate-y-4 rounded-lg"></div>
+                            <img
+                                src={`${import.meta.env.BASE_URL}assets/about-image.jpg`}
+                                alt="Thomas McElwrath"
+                                className="relative z-10 rounded-lg shadow-2xl w-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                            />
+                            {/* Stylized T overlay */}
+                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[20rem] font-bold text-white/5 pointer-events-none select-none font-heading leading-none">
+                                T
+                            </div>
+                        </div>
+
+                        {/* Right Column: Text */}
+                        <div className="text-left">
+                            <span className="text-brand-gold font-bold uppercase tracking-widest text-sm mb-4 block">Our Mission</span>
+                            <h3 className="text-3xl md:text-4xl leading-tight font-light text-white mb-8 border-b border-white/10 pb-8">
+                                To elevate successful companies into significant businesses.
+                            </h3>
+
+                            <div className="space-y-6 text-gray-300 font-light leading-relaxed">
+                                <p>
+                                    For most business owners, <span className="text-white font-bold">70–80% of personal net worth is concentrated in their company</span>, yet only <span className="text-white font-bold">about 20% of businesses taken to market actually sell</span>. Of those transactions that do close, <span className="text-white font-bold">nearly half require material concessions</span>, often resulting in proceeds below the owner's target or financial need.
+                                </p>
+                                <p>
+                                    Even more concerning, among owners who do achieve a sale, <span className="text-white font-bold">76% report profound regret within one year</span>—most commonly because the transaction failed to deliver the financial security they expected and/or they lacked a clear plan for what comes next.
+                                </p>
+                                <p>
+                                    Your business is likely your largest asset. Protecting it requires more than operational success—it requires <span className="text-white font-bold">intentional preparation for value, transferability, and transition</span>.
+                                </p>
+                                <p>
+                                    At TANDEM, we help owners transform a <em className="text-white">successful company</em> into a <em className="text-brand-gold">significant business</em>—one that is:
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* 4 Pillars of a Significant Business */}
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                        <div className="glass-panel p-8 rounded-xl text-center hover-lift">
+                            <div className="w-16 h-16 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <DollarSign className="text-brand-gold" size={32} />
+                            </div>
+                            <h4 className="text-xl font-bold text-white mb-4">1. Valuable</h4>
+                            <p className="text-gray-400 text-sm leading-relaxed">
+                                Possessing an enterprise value that meets or exceeds your future financial requirements.
+                            </p>
+                        </div>
+                        <div className="glass-panel p-8 rounded-xl text-center hover-lift">
+                            <div className="w-16 h-16 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <Settings className="text-brand-gold" size={32} />
+                            </div>
+                            <h4 className="text-xl font-bold text-white mb-4">2. Transferable</h4>
+                            <p className="text-gray-400 text-sm leading-relaxed">
+                                Designed to operate efficiently without your constant, direct involvement.
+                            </p>
+                        </div>
+                        <div className="glass-panel p-8 rounded-xl text-center hover-lift">
+                            <div className="w-16 h-16 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <Target className="text-brand-gold" size={32} />
+                            </div>
+                            <h4 className="text-xl font-bold text-white mb-4">3. Ready</h4>
+                            <p className="text-gray-400 text-sm leading-relaxed">
+                                Positioned to transfer at any time, not only when circumstances force a decision.
+                            </p>
+                        </div>
+                        <div className="glass-panel p-8 rounded-xl text-center hover-lift">
+                            <div className="w-16 h-16 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <TrendingUp className="text-brand-gold" size={32} />
+                            </div>
+                            <h4 className="text-xl font-bold text-white mb-4">4. Attractive</h4>
+                            <p className="text-gray-400 text-sm leading-relaxed">
+                                Compelling to buyers due to strong human, structural, customer, and cultural capital.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Callout */}
+                    <div className="mt-16 text-center">
+                        <p className="text-xl md:text-2xl text-white font-light italic border-l-4 border-brand-gold pl-6 py-4 text-left max-w-3xl mx-auto">
+                            Start preparing proactively—before timing, markets, or circumstances decide for you.
                         </p>
-                        <p className="text-lg text-gray-400 font-light leading-loose">
-                            Only 20% of businesses listed for sale actually sell. We exist to put you in that top 20%, ensuring you don't just exit, but exit with significance.
+                        <p className="mt-8 text-gray-400 max-w-3xl mx-auto">
+                            Our work spans founder-led and investor-backed businesses across several industries, giving us a broad market perspective and practical insight into what drives durable value and successful outcomes.
                         </p>
                     </div>
                 </div>
             </section>
 
-            {/* The 4-Step Process - Vertical Timeline */}
-            <section id="tandem-method" className="py-32 relative">
+            {/* Our Team Section */}
+            <section className="py-32 bg-brand-slate">
+                <div className="container mx-auto px-6">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl font-heading font-light tracking-wide">OUR TEAM</h2>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
+                        <div className="text-left">
+                            <p className="text-xl text-white font-light leading-relaxed mb-8">
+                                <span className="text-brand-gold font-bold">With more than two decades of experience</span>, we have advised owners and investors across the full transaction lifecycle, including business sales, mergers, and acquisitions.
+                            </p>
+                            <p className="text-lg text-gray-300 leading-relaxed">
+                                Our work spans companies of all sizes and industries, giving us a broad market perspective and practical insight into what drives successful outcomes.
+                            </p>
+                        </div>
+                        <div className="relative">
+                            <div className="absolute inset-0 bg-brand-gold/10 transform -translate-x-4 translate-y-4 rounded-lg"></div>
+                            <img
+                                src={`${import.meta.env.BASE_URL}assets/team-medium.png`}
+                                alt="Thomas McElwrath"
+                                className="relative z-10 rounded-lg shadow-2xl w-full max-w-md mx-auto object-cover"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* The 4-Step Process - TANDEM SERVICES */}
+            <section id="tandem-method" className="py-32 relative bg-brand-dark/30">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-24">
                         <span className="text-brand-gold text-xs font-bold tracking-[0.3em] uppercase block mb-4">The Roadmap</span>
-                        <h2 className="text-4xl md:text-5xl font-heading font-light text-white">The Tandem Method</h2>
+                        <h2 className="text-4xl md:text-5xl font-heading font-light text-white">TANDEM SERVICES</h2>
                     </div>
 
                     <div className="max-w-4xl mx-auto relative">
                         {/* Vertical Line */}
                         <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-white/10 transform -translate-x-1/2 hidden md:block"></div>
 
-                        {/* Step 1 */}
+                        {/* Step 1: Identify */}
                         <div className="grid md:grid-cols-2 gap-16 mb-24 relative">
                             <div className="text-right md:pr-12 hidden md:block">
-                                <div className="text-9xl font-heading font-bold text-white/5 absolute right-full mr-[-4rem] top-0 selection:bg-none pointer-events-none">01</div>
+                                <div className="text-9xl font-heading font-bold text-white/10 absolute right-full mr-[-4rem] top-0 selection:bg-none pointer-events-none">01</div>
                                 <h3 className="text-5xl font-heading font-normal mb-4 text-white">Identify</h3>
-                                <p className="text-gray-300 leading-relaxed text-xl">
-                                    We start by identifying exactly where you stand compared to best-in-class peers. This baseline drives every future decision.
+                                <p className="text-gray-300 leading-relaxed text-xl mb-4">
+                                    Establish clarity on value, risk, and upside.
+                                </p>
+                                <p className="text-gray-400 text-base">
+                                    We begin by benchmarking your business against similarly sized best-in-class peers. Using this comparison, we identify structural risks and unrealized opportunities, then build a clear roadmap to elevate your company from <em>successful</em> to <em className="text-brand-gold">significant</em>.
                                 </p>
                             </div>
                             <div className="md:pl-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
                                 <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">01.</span> Identify</h3>
-                                <div className="grid gap-8">
+                                <div className="grid gap-6">
                                     <div className="glass-panel p-6 rounded-lg">
-                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Calculate Business Value</h4>
-                                        <p className="text-gray-300 text-base leading-relaxed">
-                                            Industry best practices require owners to calculate their business's enterprise value at least <span className="font-bold text-white">annually</span>. The result from this foundational step should drive every future decision, so it's paramount that it is always accurate to ensure the strategic plans dependent on it are correctly aligned.
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Business Value Calculation</h4>
+                                        <p className="text-gray-200 text-base leading-relaxed">
+                                            Best practice requires owners to calculate enterprise value at least annually. This valuation serves as the foundation for strategic decision-making—capital allocation, growth initiatives, succession planning, and exit timing—making accuracy critical.
                                         </p>
                                     </div>
                                     <div className="glass-panel p-6 rounded-lg">
                                         <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Risk & Opportunity Audit</h4>
-                                        <p className="text-gray-300 text-base leading-relaxed">
-                                            Before a business owner should consider investing resources into growing their business, best practices require them first to conduct a full risk/opportunity audit to identify and prioritize: (a) cracks in the foundation; (b) skeletons in the closet; and (c) potential red flags which would either make their business unsellable or result in an insultingly low offer.
+                                        <p className="text-gray-200 text-base leading-relaxed">
+                                            Before investing additional time or capital into growth, owners must first understand what could impair value. This audit identifies and prioritizes foundational weaknesses, latent risks ("skeletons"), and red flags that could render the business unsellable or materially depress valuation.
                                         </p>
                                     </div>
                                     <div className="glass-panel p-6 rounded-lg">
                                         <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Wealth Gap Assessment</h4>
-                                        <p className="text-gray-300 text-base leading-relaxed">
-                                            With 70-80% of most business owners' net worth tethered their company, and only 5% of business owners happy with the net results of the sale of their business, owners use this assessment to calculate the minimum value they need to sell their company for to sustain their desired lifestyle after exiting.
+                                        <p className="text-gray-200 text-base leading-relaxed">
+                                            With 70–80% of an owner's net worth typically tied to the business—and only a small percentage satisfied with net exit proceeds—this assessment determines the minimum enterprise value required to sustain your desired post-exit lifestyle.
                                         </p>
                                     </div>
                                     <div className="glass-panel p-6 rounded-lg">
                                         <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Value Gap Assessment</h4>
-                                        <p className="text-gray-300 text-base leading-relaxed">
-                                            For those business owners who want to calculate the difference between their company's current business value (e.g., Enterprise Value) and the business's potential valuation if they were to perform at best-in-class levels in relation to EBITDA.
+                                        <p className="text-gray-200 text-base leading-relaxed">
+                                            We calculate the difference between your current enterprise value and the value your business could command if operating at best-in-class EBITDA performance.
                                         </p>
                                     </div>
                                     <div className="glass-panel p-6 rounded-lg">
                                         <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Profit Gap Assessment</h4>
-                                        <p className="text-gray-300 text-base leading-relaxed">
-                                            Calculate the difference between a business's current profitability and the potential profitability it could achieve by optimizing benchmarks.
+                                        <p className="text-gray-200 text-base leading-relaxed">
+                                            This analysis measures the delta between current profitability and achievable profitability under best-in-class operational and financial discipline.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Step 2 */}
+                        {/* Step 2: Protect */}
                         <div className="grid md:grid-cols-2 gap-16 mb-24 relative">
                             <div className="order-2 md:order-1 md:text-right md:pr-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
                                 <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">02.</span> Protect</h3>
-                                <p className="text-gray-400 mb-8 italic">We consult with you to prepare your business to have a solid foundation we will be able to build on later by eliminating or reducing your identified risks.</p>
-                                <div className="grid gap-8">
+                                <p className="text-gray-400 mb-8 italic">De-risk the business and fortify the foundation. We work with you to systematically reduce or eliminate the risks identified in Step 1, ensuring the business is structurally sound before accelerating growth.</p>
+                                <div className="grid gap-6">
                                     <div className="glass-panel p-6 rounded-lg">
                                         <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Focused Risk Abatement</h4>
-                                        <p className="text-gray-300 text-base leading-relaxed mb-4">
-                                            Using your customized project roadmap generated from the <span className="text-white font-semibold">In-Depth Business Risk & Opportunity Assessment</span>, your first 12 months, utilizing 90-day sprints, will be exclusively dedicated to implementing industry best practices and completing all Level 1: PROTECT projects.
+                                        <p className="text-gray-200 text-base leading-relaxed mb-4">
+                                            Using your customized roadmap from the TANDEM In-Depth Risk & Opportunity Assessment, the first 12 months are executed in disciplined 90-day sprints. This phase is dedicated exclusively to completing Level 1: PROTECT initiatives.
+                                        </p>
+                                    </div>
+                                    <div className="glass-panel p-6 rounded-lg">
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Strategic Planning Across Core Functions</h4>
+                                        <p className="text-gray-200 text-base leading-relaxed mb-4">
+                                            Risk mitigation and readiness improvements span:
                                         </p>
                                         <ul className="text-sm text-gray-400 grid grid-cols-2 gap-2 text-left">
-                                            <li>• Strategic Planning</li>
-                                            <li>• People / Culture</li>
                                             <li>• Leadership</li>
-                                            <li>• Operations</li>
                                             <li>• Sales</li>
-                                            <li>• Finance</li>
                                             <li>• Marketing</li>
+                                            <li>• People & Culture</li>
+                                            <li>• Operations</li>
+                                            <li>• Finance</li>
                                             <li>• Legal</li>
                                         </ul>
                                     </div>
                                     <div className="glass-panel p-6 rounded-lg">
                                         <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Proactive Due Diligence</h4>
-                                        <p className="text-gray-300 text-base leading-relaxed">
-                                            With 50% of buyer's rescinding their offers/LOIs during the due diligence phase, why not proactively run through a due diligence practice well in advance? Identify all potential deal-killing risks and resolve them—or at least develop a plan to reduce their potential perceived risk by a future buyer.
+                                        <p className="text-gray-200 text-base leading-relaxed">
+                                            With nearly half of buyers rescinding offers during diligence, we run a proactive diligence process well in advance of a transaction. This allows time to resolve deal-killing issues—or, at minimum, manage buyer perception and risk pricing.
                                         </p>
                                     </div>
                                     <div className="glass-panel p-6 rounded-lg">
-                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Cash Flow Management Strategy</h4>
-                                        <p className="text-gray-300 text-base leading-relaxed mb-4">
-                                            We train you to run your company utilizing proven cash flow allocations strategies based on your business's respective tiered Targeted Allocation Percentages (TAPs), utilizing different accounts for at least:
+                                        <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Cash Flow Management Improvement</h4>
+                                        <p className="text-gray-200 text-base leading-relaxed mb-4">
+                                            We implement proven cash-flow allocation disciplines using tiered Target Allocation Percentages (TAPs), including separate accounts for:
                                         </p>
-                                        <ul className="text-sm text-gray-400 flex flex-wrap gap-x-6 gap-y-2 justify-end">
+                                        <ul className="text-sm text-gray-400 flex flex-wrap gap-x-6 gap-y-2">
                                             <li>• Profit</li>
-                                            <li>• Owner's Pay</li>
-                                            <li>• Tax</li>
-                                            <li>• OpEx</li>
+                                            <li>• Owner Compensation</li>
+                                            <li>• Taxes</li>
+                                            <li>• Operating Expenses</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div className="order-1 md:order-2 md:pl-12 hidden md:block">
-                                <div className="text-9xl font-heading font-bold text-white/5 absolute left-full ml-[-4rem] top-0 selection:bg-none pointer-events-none">02</div>
+                                <div className="text-9xl font-heading font-bold text-white/10 absolute left-full ml-[-4rem] top-0 selection:bg-none pointer-events-none">02</div>
                                 <h3 className="text-5xl font-heading font-normal mb-4 text-white">Protect</h3>
-                                <p className="text-gray-300 leading-relaxed text-xl">
-                                    Before building, we must secure the foundation. We eliminate risks that could scare off buyers and optimize cash flow.
+                                <p className="text-gray-200 leading-relaxed text-xl">
+                                    De-risk the business and fortify the foundation.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Step 3 */}
+                        {/* Step 3: Build */}
                         <div className="grid md:grid-cols-2 gap-16 mb-24 relative">
                             <div className="text-right md:pr-12 hidden md:block">
-                                <div className="text-9xl font-heading font-bold text-white/5 absolute right-full mr-[-4rem] top-0 selection:bg-none pointer-events-none">03</div>
+                                <div className="text-9xl font-heading font-bold text-white/10 absolute right-full mr-[-4rem] top-0 selection:bg-none pointer-events-none">03</div>
                                 <h3 className="text-5xl font-heading font-normal mb-4 text-white">Build</h3>
-                                <p className="text-gray-300 leading-relaxed text-xl">
-                                    With a solid foundation, we accelerate value growth to maximize your multiple (3x → 8x+).
+                                <p className="text-gray-200 leading-relaxed text-xl">
+                                    Deliberately grow enterprise value.
                                 </p>
                             </div>
                             <div className="md:pl-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
                                 <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">03.</span> Build</h3>
-                                <p className="text-gray-400 mb-8 italic">Now that you've created a solid foundation, it's time to start focusing on building your business' enterprise value.</p>
+                                <p className="text-gray-400 mb-8 italic">With a strong foundation in place, we shift focus to intentional value creation.</p>
                                 <div className="glass-panel p-6 rounded-lg">
                                     <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Value Growth Acceleration</h4>
-                                    <p className="text-gray-300 text-base leading-relaxed">
-                                        We train you to transform your successful company into a significant business by strategically prioritizing, targeting and completing focused value growth projects.
+                                    <p className="text-gray-200 text-base leading-relaxed">
+                                        We guide you in prioritizing and executing high-impact value-growth initiatives—projects designed to materially improve enterprise value, scalability, and buyer attractiveness.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Step 4 */}
+                        {/* Step 4: Sell or remain Best-in-Class */}
                         <div className="grid md:grid-cols-2 gap-16 relative">
                             <div className="order-2 md:order-1 md:text-right md:pr-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
-                                <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">04.</span> Sell</h3>
-                                <p className="text-gray-400 mb-8 italic">Now that you've created a Significant Company, it's time to prepare to sift through unsolicited or solicited offers to purchase your business.</p>
+                                <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">04.</span> Sell or remain Best-in-Class</h3>
+                                <p className="text-gray-400 mb-8 italic">Prepare for and manage outcomes. Once the business has reached "significant" status, we help you navigate inbound or outbound transaction opportunities with discipline and clarity.</p>
                                 <div className="glass-panel p-6 rounded-lg">
                                     <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Seller Advisory Services</h4>
-                                    <p className="text-gray-300 text-base leading-relaxed">
-                                        Customized strategic services to evaluate and achieve the desired result.
+                                    <p className="text-gray-200 text-base leading-relaxed">
+                                        Customized advisory support to evaluate offers, manage process, and achieve outcomes aligned with your financial, personal, and strategic objectives.
                                     </p>
                                 </div>
                             </div>
                             <div className="order-1 md:order-2 md:pl-12 hidden md:block">
-                                <div className="text-9xl font-heading font-bold text-white/5 absolute left-full ml-[-4rem] top-0 selection:bg-none pointer-events-none">04</div>
-                                <h3 className="text-5xl font-heading font-normal mb-4 text-white">Sell</h3>
-                                <p className="text-gray-300 leading-relaxed text-xl">
-                                    Maximize your exit with a company that is ready for the market. We provide the strategy to ensure you win.
+                                <div className="text-9xl font-heading font-bold text-white/10 absolute left-full ml-[-4rem] top-0 selection:bg-none pointer-events-none">04</div>
+                                <h3 className="text-5xl font-heading font-normal mb-4 text-white">Sell or remain Best-in-Class</h3>
+                                <p className="text-gray-200 leading-relaxed text-xl">
+                                    Prepare for and manage outcomes.
                                 </p>
                             </div>
                         </div>
 
                     </div>
+
+                    {/* System Note */}
+                    <div className="mt-24 text-center max-w-3xl mx-auto">
+                        <p className="text-xl text-white italic font-light">
+                            This is not advice in isolation—it is a structured system for building, protecting, and realizing enterprise value.
+                        </p>
+                    </div>
                 </div>
             </section>
 
             {/* Final CTA */}
-            <section className="py-32 relative overflow-hidden text-center">
+            <section className="py-32 relative overflow-hidden text-center bg-brand-slate">
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/50 to-transparent"></div>
                 <div className="container mx-auto px-6 relative z-10">
-                    <h2 className="text-5xl md:text-6xl font-heading font-light mb-8 text-white">Ready for <span className="text-brand-gold italic">Significance</span>?</h2>
-                    <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-light">
-                        Join our exclusive waitlist for private advisory services.
-                    </p>
-                    <button
-                        onClick={() => setIsWaitlistOpen(true)}
-                        className="glass-button text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-white"
-                    >
-                        Join The Waitlist
-                    </button>
+                    <div className="max-w-2xl mx-auto bg-white/5 backdrop-blur-md border border-white/10 p-12 rounded-2xl">
+                        <h2 className="text-3xl md:text-4xl font-heading font-light mb-8 text-white tracking-wide">
+                            Build with intention. <br />
+                            Build with <span className="text-brand-gold font-bold">TANDEM</span>.
+                        </h2>
+                        <button
+                            onClick={() => setIsWaitlistOpen(true)}
+                            className="bg-transparent border border-brand-gold text-brand-gold font-bold py-4 px-10 rounded-full hover:bg-brand-gold hover:text-brand-dark transition-all duration-300 tracking-wider text-sm"
+                        >
+                            JOIN THE WAITLIST TO WORK WITH TANDEM
+                        </button>
+                    </div>
 
                 </div>
             </section>
