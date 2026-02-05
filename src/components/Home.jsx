@@ -59,7 +59,7 @@ const Home = () => {
             </section>
 
             {/* About Tandem Section - 2 Column Layout */}
-            <section className="py-32 bg-brand-dark/30">
+            <section className="pt-32 pb-12 bg-brand-dark/30">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-heading font-light tracking-wide">ABOUT TANDEM</h2>
@@ -159,7 +159,7 @@ const Home = () => {
             </section>
 
             {/* Our Team Section */}
-            <section className="py-32 bg-brand-slate">
+            <section className="pt-12 pb-32 bg-brand-slate">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-heading font-light tracking-wide">OUR TEAM</h2>
