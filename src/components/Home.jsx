@@ -369,7 +369,7 @@ const Home = () => {
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="max-w-2xl mx-auto bg-white/5 backdrop-blur-md border border-white/10 p-12 rounded-2xl">
                         <h2 className="text-3xl md:text-4xl font-heading font-light mb-8 text-white tracking-wide">
-                            Build with intention. <br />
+                            Build with <span className="text-brand-gold font-bold">INTENTION</span>. <br />
                             Build with <span className="text-brand-gold font-bold">TANDEM</span>.
                         </h2>
                         <button
