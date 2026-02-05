@@ -355,7 +355,7 @@ const Home = () => {
                     </div>
 
                     {/* System Note */}
-                    <div className="mt-24 text-center max-w-3xl mx-auto">
+                    <div className="mt-12 text-center max-w-3xl mx-auto">
                         <p className="text-xl text-white italic font-light">
                             This is not advice in isolation—it is a structured system for building, protecting, and realizing enterprise value.
                         </p>
@@ -364,7 +364,7 @@ const Home = () => {
             </section>
 
             {/* Final CTA */}
-            <section className="py-32 relative overflow-hidden text-center bg-brand-slate">
+            <section className="py-20 relative overflow-hidden text-center bg-brand-slate">
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/50 to-transparent"></div>
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="max-w-2xl mx-auto bg-white/5 backdrop-blur-md border border-white/10 p-12 rounded-2xl">
