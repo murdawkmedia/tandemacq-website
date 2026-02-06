@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, CheckCircle, TrendingUp, Search, FileText, Settings, Play, Target, Shield, Rocket, DollarSign } from 'lucide-react';
 import WaitlistModal from './WaitlistModal';
-import tomTedTalk from '../assets/tom_photos/tom-ted-talk-style.png';
+import tomTedTalk from '../assets/handshake-branded.png';
 
 const Home = () => {
     const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
