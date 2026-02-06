@@ -9,12 +9,12 @@ const Home = () => {
     return (
         <div className="animate-in fade-in duration-700 bg-brand-slate text-brand-white">
             {/* Hero Section - Centered & Atmospheric */}
-            <section className="relative min-h-screen flex items-start justify-start overflow-hidden">
+            <section className="relative h-[85vh] flex items-start justify-start overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src={`${import.meta.env.BASE_URL}assets/hero-presentation.png`}
                         alt="Thomas McElwrath - Strategic Business Advisor"
-                        className="w-full h-full object-cover object-[80%_20%] opacity-60 scale-110"
+                        className="w-full h-full object-cover object-[75%_50%] opacity-60 -translate-y-[200px]"
                     />
                     {/* Adjusted Gradient: Lighter at the top to show the head, darker at bottom for text contrast */}
                     <div className="absolute inset-0 bg-gradient-to-r from-brand-slate/90 via-brand-slate/40 to-transparent"></div>
