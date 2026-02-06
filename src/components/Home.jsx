@@ -187,7 +187,7 @@ const Home = () => {
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-24">
                         <h2 className="text-4xl md:text-5xl font-heading font-light text-white">TANDEM SERVICES</h2>
-                        <p className="text-gray-400 text-lg mt-4">The TANDEM Business and Consulting Approach</p>
+                        <p className="text-brand-gold text-lg mt-4">The TANDEM Business and Consulting Approach</p>
                     </div>
 
                     <div className="max-w-4xl mx-auto relative">
