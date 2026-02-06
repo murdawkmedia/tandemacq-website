@@ -55,7 +55,8 @@ const Layout = () => {
                         <img
                             src={`${import.meta.env.BASE_URL}assets/logo-transparent.png`}
                             alt="Tandem Acquisitions"
-                            className="h-16 md:h-20 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+                            className="w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+                            style={{ height: '48px' }}
                         />
 
                     </Link>
