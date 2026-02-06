@@ -28,7 +28,7 @@ const Home = () => {
                         Transforming <br /> <span className="text-white/80">Successful Businesses</span> <br /> Into <span className="text-brand-gold italic font-light">Significant</span> Businesses.
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-2xl mr-auto font-light leading-relaxed animate-fade-in delay-200 drop-shadow-md">
-                        The <span className="text-brand-gold font-bold">TANDEM</span> consulting and training approach.
+                        Everything Big Started Small. Built in <span className="text-brand-gold font-bold">TANDEM</span>
                     </p>
 
                 </div>
@@ -68,7 +68,7 @@ const Home = () => {
                             <img
                                 src={`${import.meta.env.BASE_URL}assets/about-image.jpg`}
                                 alt="Thomas McElwrath"
-                                className="relative z-10 rounded-lg shadow-2xl w-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                                className="relative z-10 rounded-lg shadow-2xl w-full object-cover transition-all duration-500"
                             />
                             {/* Stylized T overlay */}
                             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[20rem] font-bold text-white/5 pointer-events-none select-none font-heading leading-none">
@@ -186,8 +186,8 @@ const Home = () => {
             <section id="tandem-method" className="pt-20 pb-0 relative bg-brand-dark/30">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-24">
-                        <span className="text-brand-gold text-xs font-bold tracking-[0.3em] uppercase block mb-4">The Roadmap</span>
                         <h2 className="text-4xl md:text-5xl font-heading font-light text-white">TANDEM SERVICES</h2>
+                        <p className="text-gray-400 text-lg mt-4">The TANDEM Business and Consulting Approach</p>
                     </div>
 
                     <div className="max-w-4xl mx-auto relative">
@@ -252,13 +252,16 @@ const Home = () => {
                                     <div className="text-9xl font-heading font-bold text-white/10 leading-none selection:bg-none pointer-events-none -mb-4">02</div>
                                     <h3 className="text-5xl font-heading font-normal text-white relative z-10">Protect</h3>
                                 </div>
-                                <p className="text-gray-200 leading-relaxed text-xl">
+                                <p className="text-gray-200 leading-relaxed text-xl mb-6">
                                     De-risk the business and fortify the foundation.
                                 </p>
+                                <p className="text-gray-400 italic text-base leading-relaxed">
+                                    We work with you to systematically reduce or eliminate the risks identified in Step 1, ensuring the business is structurally sound before accelerating growth.
+                                </p>
                             </div>
-                            <div className="md:pl-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
+                            <div className="md:pl-12 flex flex-col justify-start border-l border-white/10 md:border-none pl-8 md:pl-0">
                                 <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">02.</span> Protect</h3>
-                                <p className="text-gray-400 mb-8 italic">De-risk the business and fortify the foundation. We work with you to systematically reduce or eliminate the risks identified in Step 1, ensuring the business is structurally sound before accelerating growth.</p>
+                                <p className="md:hidden text-gray-400 mb-8 italic">De-risk the business and fortify the foundation. We work with you to systematically reduce or eliminate the risks identified in Step 1, ensuring the business is structurally sound before accelerating growth.</p>
                                 <div className="grid gap-6">
                                     <div className="glass-panel p-6 rounded-lg">
                                         <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Focused Risk Abatement</h4>
@@ -310,13 +313,16 @@ const Home = () => {
                                     <div className="text-9xl font-heading font-bold text-white/10 leading-none selection:bg-none pointer-events-none -mb-4">03</div>
                                     <h3 className="text-5xl font-heading font-normal text-white relative z-10">Build</h3>
                                 </div>
-                                <p className="text-gray-200 leading-relaxed text-xl">
+                                <p className="text-gray-200 leading-relaxed text-xl mb-6">
                                     Deliberately grow enterprise value.
                                 </p>
+                                <p className="text-gray-400 italic text-base leading-relaxed">
+                                    With a strong foundation in place, we shift focus to intentional value creation.
+                                </p>
                             </div>
-                            <div className="md:pl-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
+                            <div className="md:pl-12 flex flex-col justify-start border-l border-white/10 md:border-none pl-8 md:pl-0">
                                 <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">03.</span> Build</h3>
-                                <p className="text-gray-400 mb-8 italic">With a strong foundation in place, we shift focus to intentional value creation.</p>
+                                <p className="md:hidden text-gray-400 mb-8 italic">With a strong foundation in place, we shift focus to intentional value creation.</p>
                                 <div className="glass-panel p-6 rounded-lg">
                                     <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Value Growth Acceleration</h4>
                                     <p className="text-gray-200 text-base leading-relaxed">
@@ -326,20 +332,23 @@ const Home = () => {
                             </div>
                         </div>
 
-                        {/* Step 4: Sell or remain Best-in-Class */}
+                        {/* Step 4: Prepare for Every Outcome */}
                         <div className="grid md:grid-cols-2 gap-16 relative">
                             <div className="text-right md:pr-12 hidden md:block">
                                 <div className="flex items-center justify-end gap-4 mb-4 relative">
                                     <div className="text-9xl font-heading font-bold text-white/10 leading-none selection:bg-none pointer-events-none -mb-4">04</div>
-                                    <h3 className="text-5xl font-heading font-normal text-white relative z-10">Sell or remain Best-in-Class</h3>
+                                    <h3 className="text-5xl font-heading font-normal text-white relative z-10">Prepare for Every Outcome</h3>
                                 </div>
-                                <p className="text-gray-200 leading-relaxed text-xl">
+                                <p className="text-gray-200 leading-relaxed text-xl mb-6">
                                     Prepare for and manage outcomes.
                                 </p>
+                                <p className="text-gray-400 italic text-base leading-relaxed">
+                                    Once the business has reached "significant" status, we help you navigate inbound or outbound transaction opportunities with discipline and clarity.
+                                </p>
                             </div>
-                            <div className="md:pl-12 flex flex-col justify-center border-l border-white/10 md:border-none pl-8 md:pl-0">
-                                <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">04.</span> Sell or remain Best-in-Class</h3>
-                                <p className="text-gray-400 mb-8 italic">Prepare for and manage outcomes. Once the business has reached "significant" status, we help you navigate inbound or outbound transaction opportunities with discipline and clarity.</p>
+                            <div className="md:pl-12 flex flex-col justify-start border-l border-white/10 md:border-none pl-8 md:pl-0">
+                                <h3 className="md:hidden text-5xl font-heading font-normal mb-4 text-white"><span className="text-brand-gold">04.</span> Prepare for Every Outcome</h3>
+                                <p className="md:hidden text-gray-400 mb-8 italic">Prepare for and manage outcomes. Once the business has reached "significant" status, we help you navigate inbound or outbound transaction opportunities with discipline and clarity.</p>
                                 <div className="glass-panel p-6 rounded-lg">
                                     <h4 className="text-brand-gold font-bold uppercase tracking-wider text-sm mb-3">Seller Advisory Services</h4>
                                     <p className="text-gray-200 text-base leading-relaxed">
