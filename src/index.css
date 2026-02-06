@@ -243,3 +243,29 @@ h6,
   background: rgba(255, 255, 255, 0.06);
   border-color: rgba(212, 175, 55, 0.3);
 }
+
+/* ============================================
+   CROSS-BROWSER IMAGE COMPATIBILITY
+   For older Edge/IE browsers
+   ============================================ */
+
+/* Team section image container - uses padding trick for aspect ratio */
+.team-image-container {
+  position: relative;
+  min-height: 300px;
+}
+
+.team-image-container img {
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  height: auto;
+  margin: 0 auto;
+  /* Fallback for browsers without aspect-ratio support */
+}
+
+/* Ensure images don't break in older browsers */
+img {
+  max-width: 100%;
+  height: auto;
+}
