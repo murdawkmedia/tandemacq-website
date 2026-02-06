@@ -166,7 +166,7 @@ const Home = () => {
                                 <span className="text-brand-gold font-bold">With more than two decades of experience</span>, we have advised owners and investors across the full transaction lifecycle, including business sales, mergers, and acquisitions.
                             </p>
                             <p className="text-lg text-gray-300 leading-relaxed">
-                                Our work spans companies of all sizes and industries, giving us a broad market perspective and practical insight into what drives successful outcomes.
+                                We combine deep financial acumen with operational grit, helping owners navigate complex transitions with confidence and clarity.
                             </p>
                         </div>
                         <div className="relative">
