@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, CheckCircle, TrendingUp, Search, FileText, Settings, Play, Target, Shield, Rocket, DollarSign } from 'lucide-react';
 import WaitlistModal from './WaitlistModal';
+import tomTedTalk from '../assets/tom_photos/tom-ted-talk-style.png';
 
 const Home = () => {
     const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
@@ -172,7 +173,7 @@ const Home = () => {
                         <div className="relative">
                             <div className="absolute inset-0 bg-brand-gold/10 transform -translate-x-4 translate-y-4 rounded-lg"></div>
                             <img
-                                src={`${import.meta.env.BASE_URL}assets/team-medium.png`}
+                                src={tomTedTalk}
                                 alt="Thomas McElwrath"
                                 className="relative z-10 rounded-lg shadow-2xl w-full max-w-md mx-auto object-cover"
                             />
