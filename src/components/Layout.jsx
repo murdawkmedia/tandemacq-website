@@ -31,7 +31,7 @@ const Layout = () => {
     }, [location]);
 
     return (
-        <div className="flex flex-col min-h-screen font-body text-brand-white bg-brand-slate">
+        <div className="flex flex-col min-h-screen font-body text-brand-white bg-brand-slate overflow-x-hidden">
             {/* Header */}
             <header className="sticky top-0 z-50 bg-brand-slate/95 backdrop-blur-md shadow-lg py-2 transition-all duration-300">
                 <div className="container mx-auto px-6 grid grid-cols-[auto_1fr_auto] md:grid-cols-3 items-center relative">
@@ -68,19 +68,29 @@ const Layout = () => {
                     {/* Placeholder for spacing on mobile right */}
                     <div className="w-6 md:hidden"></div>
                 </div>
-
-                {/* Mobile Menu Overlay */}
-                <div className={`fixed inset-0 bg-brand-slate z-40 flex flex-col items-center justify-center space-y-8 transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
-                    <Link to="/" onClick={() => setIsMenuOpen(false)} className="text-2xl font-bold uppercase tracking-widest font-heading text-white hover:text-brand-gold">Home</Link>
-                    <a href={`${import.meta.env.BASE_URL}#tandem-method`} onClick={() => setIsMenuOpen(false)} className="text-2xl font-bold uppercase tracking-widest font-heading text-white hover:text-brand-gold">Our Method</a>
-                    <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="text-2xl font-bold uppercase tracking-widest font-heading text-white hover:text-brand-gold">Contact</Link>
-
-                    <div className="pt-12 flex flex-col items-center space-y-4">
-                        <p className="text-sm uppercase tracking-widest text-brand-gold">Get in Touch</p>
-                        <a href="mailto:tom@tandemacq.com" className="text-xl text-white font-light">tom@tandemacq.com</a>
-                    </div>
-                </div>
             </header>
+
+            {/* Mobile Menu Overlay - OUTSIDE header to avoid containing block issue from backdrop-blur */}
+            <div
+                className={`fixed inset-0 z-[100] flex flex-col items-center justify-center space-y-8 transition-all duration-300 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'} md:hidden`}
+                style={{ backgroundColor: '#010101' }}
+            >
+                {/* Close Button */}
+                <button
+                    className="absolute top-4 left-6 text-white hover:text-brand-gold transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                >
+                    <X size={28} />
+                </button>
+                <Link to="/" onClick={() => setIsMenuOpen(false)} className="text-2xl font-bold uppercase tracking-widest font-heading text-white hover:text-brand-gold">Home</Link>
+                <a href={`${import.meta.env.BASE_URL}#tandem-method`} onClick={() => setIsMenuOpen(false)} className="text-2xl font-bold uppercase tracking-widest font-heading text-white hover:text-brand-gold">Our Method</a>
+                <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="text-2xl font-bold uppercase tracking-widest font-heading text-white hover:text-brand-gold">Contact</Link>
+
+                <div className="pt-12 flex flex-col items-center space-y-4">
+                    <p className="text-sm uppercase tracking-widest text-brand-gold">Get in Touch</p>
+                    <a href="mailto:tom@tandemacq.com" className="text-xl text-white font-light">tom@tandemacq.com</a>
+                </div>
+            </div>
 
             <main className="flex-grow">
                 <Outlet />
