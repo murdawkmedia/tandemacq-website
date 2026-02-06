@@ -29,19 +29,12 @@ const Home = () => {
                     <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-2xl mr-auto font-light leading-relaxed animate-fade-in delay-200 drop-shadow-md">
                         The <span className="text-brand-gold font-bold">TANDEM</span> consulting and training approach.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-6 justify-start items-center animate-fade-in delay-300">
-                        <button
-                            onClick={() => setIsWaitlistOpen(true)}
-                            className="bg-brand-gold text-brand-dark font-bold py-4 px-10 rounded-full hover:bg-white hover:text-brand-dark transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]"
-                        >
-                            JOIN THE WAITLIST
-                        </button>
-                    </div>
+
                 </div>
             </section>
 
             {/* Growth, Value, Exit Advisory Services */}
-            <section className="py-20 bg-brand-dark/50">
+            <section className="pt-20 pb-12 bg-brand-dark/50">
                 <div className="container mx-auto px-6 text-center max-w-4xl">
                     <h2 className="text-3xl md:text-4xl font-heading font-light text-white mb-8">
                         Growth, Value, Exit Advisory Services
@@ -61,7 +54,7 @@ const Home = () => {
             </section>
 
             {/* About Tandem Section - 2 Column Layout */}
-            <section className="pt-32 pb-12 bg-brand-dark/30">
+            <section className="pt-20 pb-12 bg-brand-dark/30">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-heading font-light tracking-wide">ABOUT TANDEM</h2>
