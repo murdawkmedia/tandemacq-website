@@ -171,11 +171,10 @@ const Home = () => {
                             </p>
                         </div>
                         <div className="team-image-container">
-                            <div className="absolute inset-0 bg-brand-gold/10 transform -translate-x-4 translate-y-4 rounded-lg" style={{ maxWidth: '28rem', margin: '0 auto' }}></div>
                             <img
                                 src={tomTedTalk}
                                 alt="Thomas McElwrath"
-                                className="relative z-10 rounded-lg shadow-2xl"
+                                className="relative z-10 rounded-lg"
                             />
                         </div>
                     </div>
